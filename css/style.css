@@ -1,0 +1,617 @@
+/* ! Подключение шрифтов */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@font-face {
+   font-family: "Helvetica Neue";
+   src: url("../fonts/HelveticaNeue-CondensedBlack.woff2") format("woff2"),
+      url("../fonts/HelveticaNeue-CondensedBlack.woff") format("woff");
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Helvetica Neue";
+   src: url("../fonts/HelveticaNeue.woff2") format("woff2"), url("../fonts/HelveticaNeue.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "HelveticaNeueCyr";
+   src: url("HelveticaNeueCyr-Bold.woff2") format("woff2"), url("HelveticaNeueCyr-Bold.woff") format("woff");
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+li {
+   list-style: none;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+img {
+   vertical-align: top;
+}
+html,
+body {
+   height: 100%;
+}
+html {
+   font-size: 16px; /* по умолчанию */
+}
+body {
+   line-height: 1;
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   height: 100%;
+}
+.wrapper {
+   min-height: 100%;
+   /* overflow: hidden; */
+}
+
+.cont {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 10px;
+}
+
+/* *общие классы */
+
+/* .wrapper > div:not(:last-child) {
+   margin-bottom: 50px;
+} */
+
+h1 {
+   font-size: 72px;
+   color: rgba(14, 89, 151, 0.733);
+   text-shadow: 3px -5px 10px rgb(154, 43, 182);
+   margin-bottom: 20px;
+   text-align: center;
+}
+h1 span {
+   font-size: 62px;
+   color: rgba(14, 165, 157, 0.733);
+   text-shadow: 3px -5px 10px rgb(92, 43, 182);
+   margin-bottom: 20px;
+}
+
+h1 span:last-child {
+   font-size: 52px;
+   color: rgba(132, 165, 14, 0.733);
+   text-shadow: 3px -5px 10px rgb(43, 119, 182);
+   margin-bottom: 20px;
+}
+
+h2 {
+   display: inline-block;
+   padding: 5px;
+   font-size: 50px;
+   color: rgba(36, 66, 60, 0.623);
+   /* max-width: 240px; */
+   box-shadow: 6px 9px 4px rgba(52, 153, 221, 0.651);
+   margin-bottom: 25px;
+}
+.spspi h2 {
+   box-shadow: 6px 9px 4px rgb(148, 221, 52);
+   padding: 10px 10px 20px;
+   background: rgba(136, 102, 68, 0.377);
+}
+h2.nadhealth {
+   color: rgb(29, 53, 51);
+   text-transform: capitalize;
+   background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0.65) 2%,
+      rgba(0, 0, 0, 0.65) 5%,
+      rgba(0, 0, 0, 0) 58%,
+      rgba(0, 0, 0, 0) 100%
+   );
+   display: inline-block;
+   box-shadow: none;
+}
+h2.nadhealth span {
+   background: none;
+}
+
+h2 span {
+   display: inline-block;
+   color: indianred;
+   background: radial-gradient(
+      ellipse at center,
+      rgba(245, 246, 246, 1) 0%,
+      rgba(219, 220, 226, 1) 21%,
+      rgba(184, 186, 198, 1) 49%,
+      rgba(221, 223, 227, 1) 80%,
+      rgba(245, 246, 246, 1) 100%
+   );
+   border-radius: 20px;
+}
+
+/*!  -------------------------Задачи от Сансея!---------------------------- */
+/* !---------------------------------------------- */
+/* *who-we-are */
+.who-we-are {
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+}
+.main__who-we-are {
+   /* margin-bottom: 100px; */
+   position: relative;
+   z-index: 400;
+}
+.who-we-are__container {
+   max-width: 1020px;
+   margin: 0 auto;
+   background: #5d62b5 url("../img/who-we-are/fon.png") -5px 195% no-repeat;
+   padding: 100px 87px 354px;
+   position: relative;
+}
+.who-we-are__txt-body {
+}
+.body-txt {
+   margin-bottom: 54px;
+}
+.body-txt__subtitle {
+   font-size: 12px;
+   line-height: 200%;
+   letter-spacing: 2.5px;
+   text-transform: uppercase;
+   color: #f5f5f5;
+   margin-bottom: 23px;
+   padding-left: 30px;
+   position: relative;
+}
+
+.body-txt__subtitle::before {
+   content: "";
+   display: inline-block;
+   background: url("../img/who-we-are/1.svg") 0 0 no-repeat;
+   width: 24px;
+   height: 24px;
+   position: absolute;
+   top: 1.5px;
+   left: 0px;
+}
+.body-txt__title {
+   font-weight: 900;
+   font-size: 36px;
+   line-height: 42px;
+   color: #ffffff;
+   margin-bottom: 36px;
+}
+.body-txt__text {
+   font-size: 16px;
+   line-height: 24px;
+
+   letter-spacing: 0.15px;
+   color: #f5f5f5;
+}
+.image-nahlest {
+}
+.image-nahlest__container {
+   max-width: 1020px;
+   margin: 0 auto;
+}
+.image-nahlest__dog-image {
+   max-width: 846px;
+   margin: 0 auto;
+}
+.image-nahlest__img {
+   width: 100%;
+   margin: -285px auto 0px;
+   position: relative;
+   z-index: 120;
+}
+
+.who-we-are__fon-absolute {
+   position: absolute;
+   right: -81px;
+   top: -112px;
+}
+
+.backg-test {
+   padding: 130px;
+   background: olive;
+}
+
+/* !-------------------------------------- */
+.test-sticky {
+   position: relative;
+   z-index: 20;
+}
+
+.main__test-sticky {
+   max-width: 960px;
+   margin: 0px auto 67px;
+}
+.test-sticky__one {
+   padding: 12px;
+   background: rgb(63, 175, 97);
+   /* position: relative; */
+   /* margin-bottom: -50px; */
+   position: relative;
+   top: 0px;
+   left: 0px;
+}
+.test-sticky__two {
+   padding: 12px;
+   background: rgb(170, 184, 47);
+   /* position: relative; */
+   /* margin-bottom: -50px; */
+   position: sticky;
+   top: 0px;
+   left: 0px;
+}
+.test-sticky__three {
+   padding: 12px;
+   background: rgb(106, 63, 175);
+   /* position: relative; */
+   /* margin-bottom: -50px; */
+   /* position: relative;
+   top: 0px;
+   left: 0px; */
+}
+.test-sticky__four {
+   padding: 12px;
+   background: rgb(105, 23, 40);
+   /* position: relative; */
+   /* margin-bottom: -50px; */
+   /* position: relative;
+   top: 0px;
+   left: 0px; */
+   position: sticky;
+   top: 30px;
+   left: 20px;
+}
+
+/* !-------------------------------------------- */
+.main__container-position {
+   max-width: 960px;
+   margin: 0px auto 167px;
+}
+
+.position-test {
+   position: relative;
+   z-index: 11;
+}
+
+.position-test:hover::before {
+   position: absolute;
+   top: 0px;
+   left: 0;
+   height: 100%;
+}
+
+.position-test:hover::after {
+   opacity: 1;
+}
+
+.position-test:hover {
+   text-align: center;
+}
+.position-test::before {
+   content: "";
+   display: inline-block;
+   width: 100%;
+   height: 12px;
+   background: rgb(113, 85, 136);
+}
+
+.position-test:hover .position-test__four,
+.position-test:hover .position-test__two {
+   left: 0px;
+}
+
+.position-test__one {
+   padding: 12px;
+   background: rgb(63, 175, 151);
+   /* position: relative; */
+   /* margin-bottom: -50px; */
+   position: relative;
+   top: 0px;
+   left: 0px;
+   width: 50%;
+   display: inline-block;
+}
+
+.position-test::after {
+   content: "";
+   display: block;
+   width: 10%;
+   height: 90%;
+   background: rgb(136, 85, 116);
+   position: absolute;
+   top: 20px;
+   left: 30px;
+   border-radius: 77% 23% 63% 37% / 26% 71% 29% 74%;
+   opacity: 0;
+}
+
+.position-test:hover::after {
+   background: rgba(27, 153, 15, 0.333);
+   border: 5px solid #000;
+}
+
+.position-test__two {
+   padding: 36px;
+   background: rgb(63, 93, 175);
+   /* margin-top: -34px; */
+   /* position: absolute; */
+   top: 0px;
+   left: 0;
+   display: inline-block;
+   width: 50%;
+   position: relative;
+   left: 50%;
+}
+
+/* .tetset__two::before {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 12px;
+   background: rgb(113, 85, 136);
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+} */
+
+.position-test__three {
+   padding: 12px;
+   background: rgb(175, 63, 160);
+   position: relative;
+   top: 0px;
+   left: 0px;
+   width: 50%;
+   display: inline-block;
+}
+
+.position-test__four {
+   padding: 36px;
+   background: rgb(145, 175, 63);
+   position: relative;
+   top: 0px;
+   left: 50%;
+   width: 50%;
+   display: inline-block;
+}
+
+.position-test__four::before {
+   content: "";
+   display: inline-block;
+   background: url("../img/icon/ico3.png");
+   width: 48px;
+   height: 48px;
+   position: absolute;
+   top: 9px;
+   left: 2px;
+}
+
+.position-test__two::before {
+   content: "";
+   display: inline-block;
+   background: url("../img/icon/ico7.png");
+   width: 48px;
+   height: 48px;
+   position: absolute;
+   top: 9px;
+   left: 2px;
+}
+
+/* !----------------------- */
+.test-fixed {
+   padding: 80px 20px;
+   background: rgb(145, 175, 63);
+}
+.main__test-fixed {
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   height: 100%;
+   width: 8%;
+   z-index: 10;
+}
+.test-fixed__spisok {
+}
+.test-fixed__list {
+}
+.test-fixed__link {
+}
+.img-fixed {
+   position: fixed;
+   top: 0px;
+   left: 8%;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+/* ! ------------------------------------ */
+
+.test-position {
+   padding: 80px 25px;
+   background: #754;
+   position: relative;
+}
+
+/* .test-position::before {
+   content: "наведи на меня";
+   display: block;
+   width: 100%;
+   height: 80%;
+   background: rgb(102, 103, 153);
+   position: absolute;
+   text-align: center;
+   font-size: 30px;
+   position: absolute;
+   top: 380px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 40;
+} */
+.main__test-position {
+   /* position: relative;
+   z-index: 55; */
+   max-width: 960px;
+   margin: 0px auto 67px;
+}
+.again-test-be-after {
+   /* position: relative;
+   z-index: 160; */
+}
+/* 
+.again-test-be-after::before {
+   content: "еще раз";
+   text-align: center;
+   font-size: 30px;
+   display: block;
+   width: 100%;
+   height: 100%;
+   background: rgba(102, 153, 102, 0.459);
+    position: absolute; 
+   top: 0px;
+   left: 0px;
+   position: absolute;
+}*/
+.test-position__again-test-be-after {
+}
+.spisok {
+   position: relative;
+   z-index: 38;
+}
+.again-test-be-afte__spisok {
+}
+.spisok__link {
+   display: inline-block;
+   padding: 5px 21px 5px 30px;
+   background: #fff;
+   width: 100%;
+   border-bottom: 2px dashed rgb(57, 148, 54);
+   position: relative;
+   z-index: 99;
+}
+
+.spisok__link::before {
+   content: "";
+   display: inline-block;
+   width: 12px;
+   height: 8px;
+   background: rgba(25, 63, 168, 0.411);
+   position: absolute;
+   top: 8px;
+   left: 6px;
+}
+.spisok__link::after {
+   content: "";
+   display: inline-block;
+   width: 12px;
+   height: 8px;
+   background: rgba(19, 212, 226, 0.973);
+   position: absolute;
+   top: 8px;
+   right: 6px;
+   opacity: 0;
+}
+
+.spisok__link:hover::after {
+   opacity: 1;
+}
+.spisok__list {
+   width: 182px;
+}
+
+.spisok__list::before {
+   content: "";
+   display: inline-block;
+   width: 12px;
+   height: 8px;
+   background: rgb(230, 63, 21);
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index: 57;
+}
+
+.spisok__link:hover::before {
+   content: "";
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+   background: rgba(25, 63, 168, 0.411);
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+.spisok__list {
+   width: 182px;
+}
+
+.again-test-be-after__psevdo-absolute::before {
+   content: "наведи на меня";
+   color: rgb(170, 87, 9);
+   display: block;
+   width: 100%;
+   height: 100%;
+   background: rgba(102, 103, 153, 0.733);
+
+   text-align: center;
+   font-size: 30px;
+   position: absolute;
+   margin-top: 85px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 39;
+}
+
+.again-test-be-after__psevdo-absolute::after {
+   content: "А теперь на список:)";
+   color: rgb(170, 87, 9);
+   display: inline-block;
+   width: 300px;
+   height: 40px;
+
+   font-size: 30px;
+   position: relative;
+   /* margin-top: 85px; */
+   bottom: 30px;
+   left: 35.8%;
+   z-index: 40;
+   opacity: 0;
+}
+
+.test-position__again-test-be-after:hover .again-test-be-after__psevdo-absolute::before {
+   z-index: 37;
+   content: "";
+}
+
+.test-position__again-test-be-after:hover .again-test-be-after__psevdo-absolute::after {
+   opacity: 1;
+   z-index: 38;
+}
